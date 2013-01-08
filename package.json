@@ -1,0 +1,17 @@
+{
+    "name": "TBR",
+    "version": "0.0.1",
+    "author": "Garrett Barboza <gbarboza@cmu.edu>",
+    "dependencies": {
+        "bcrypt": "*",
+        "mongoose": "3.4.x",
+        "express": "3.x",
+        "express-resource": "1.x",
+        "passport": "0.1.x",
+        "passport-local": "0.1.x"
+    },
+    "engines": {
+        "node": "0.8.x",
+        "npm":  "1.1.x"
+    }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>TBR</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+	<link rel="stylesheet" href="stylesheets/style.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/jquery.foundation.reveal.js"></script>
+    <script src="js/jquery.editable-1.0.1.js"></script>
+    <script src="js/noty/jquery.noty-custom.js"></script>
+    <script src="js/noty/themes/default.js"></script>
+    <script src="js/noty/layouts/topCenter.js"></script>
+    <script src="js/account.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="sixteen columns">
+            <h1 "remove-bottom" style="margin-top: 40px">TBR</h1>
+            <h3 >A bookmarking service</h3>
+            <a id="logout" href="#" class="button">Logout</a>
+            <a id="bookmarklet" href="#" class="button" title="poop">Drag me to your bookmark bar!</a>
+            <hr />
+        </div>
+
+        <div class="eight columns">
+            <label for="selectFolder">Select Folder</label>
+            <select id="selectFolder">
+            </select>
+        </div>
+
+        <div class="eight columns">
+            <a id="df" href="#" class="button half-bottom">Delete Current Folder</a>
+            <a id="nf" href="#" data-reveal-id="new_folder_modal" class="button half-bottom">New Folder</a>
+        </div>
+
+        <hr />
+        <div class="sixteen columns" id="links">
+        </div>
+
+        <div id="new_folder_modal" class="reveal-modal medium"> 
+            <label for="nfn">Folder Name</label>
+            <input type="text" id="nfn" />
+            <button id="mnf" type="submit">Create Folder</button>
+
+
+        </div>
+        <div id="change_folder_modal" class="reveal-modal medium"> 
+            <ul id="cfl">
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
